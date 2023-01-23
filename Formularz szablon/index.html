@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up to newsletter!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon-4.ico">
+</head>
+<body>
+    <h1 id="headline">Zapisz sie do naszego newslettera!</h1>
+    <button id="start">Zapisz sie</button>
+    <div id="container">
+        <form id="formularz" novalidate>
+            <h2>Wypełnij formularz</h2>
+            <div class="wiersz">
+            <label for="Imie">Imie</label>
+            <input name="imie"type="text" placeholder="Wprowadz swoje imie" id="Imie"required minlength="3" maxlength="100">
+            </div>
+            <div class="wiersz">
+                <label for="Telefon">Numer telefonu</label>
+                <input name="telefon" type="tel" placeholder="111-111-111" id="telefon" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="Uzyj tego formatu: 123-456-789">
+            </div>
+            <div class="wiersz">
+                <label for="Email">Email</label>
+                <input name="email"type="email" placeholder="Jan@poczta.pl" id="mail" required>
+            </div>
+            <div class="wiersz">
+                <label for="password1">Haslo</label>
+                <input type="password" placeholder="Podaj swoje haslo" id="haslo1" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.[a-zA-Z]).{8,}$" title="Uzyj conajmniej: 1 duzej litery, 1 malej litery, 1 cyfry, 1 znaku specjalnego">
+            </div>
+            <div class="wiersz">
+                <label for="password2">Potwierdz haslo</label>
+                <input name="haslo"type="password" placeholder="Potwierdz swoje haslo" id="haslo2" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.[a-zA-Z]).{8,}$" title="Uzyj conajmniej: 1 duzej litery, 1 malej litery, 1 cyfry, 1 znaku specjalnego">
+            </div>
+            <button id="confirm-but"> Potwierdz</button>
+            
+        </form>
+        <div id="errormess">
+            <h3 id="mess">Dziekujemy za zaufanie</h3>
+        </div>
+        <button id="powrot">Powrot na strone</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

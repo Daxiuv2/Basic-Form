@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #c9c9c9
+}
+#container{
+    width: 500px;
+    height: 600px;
+    background: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px 10px rgba(0, 0, 0, 0.3);
+}
+
+.wiersz{
+    height: 65px;
+}
+
+#start{
+    max-width: 300px;
+}
+label{
+    position: relative;
+    bottom: 2px;
+
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+input:valid{
+    border: 2px solid green;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+button{
+    cursor: pointer;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+button:hover{
+    filter: brightness(200%);
+    background: #222;
+}
+
+button:focus{
+    outline: none;
+}
+
+#errormess{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(5, 5, 5);
+}
+
+#powrot{
+    display: none;
+}
